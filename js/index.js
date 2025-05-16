@@ -1,4 +1,4 @@
-const jogadorAtualElemento = document.querySelector(".jogadorAtual");
+const jogadorAtual = document.querySelector(".jogadorAtual");
 
 let selecionado;
 let jogador = "X";
@@ -17,7 +17,7 @@ let combinacoes = [
 function iniciar() {
     selecionado = [];
 
-    jogadorAtualElemento.innerHTML = `JOGADOR DA VEZ: ${jogador}`;
+    jogadorAtual.innerHTML = `JOGADOR DA VEZ: ${jogador}`;
 
     document.querySelectorAll(".container button").forEach((botao) => {
     botao.innerHTML = "";
@@ -38,7 +38,7 @@ function novaJogada(e) {
     }, 100);
 
     jogador = jogador === "X" ? "O" : "X";
-    jogadorAtualElemento.innerHTML = `JOGADOR DA VEZ: ${jogador}`;
+    jogadorAtual.innerHTML = `JOGADOR DA VEZ: ${jogador}`;
 }
 
 function verificar() {
