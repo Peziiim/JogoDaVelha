@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(14, 14, 14);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 3vw;
+    font-size: 4rem;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    float: right;
+    position: relative;
+    bottom: 70vh;
+    right: 6vw;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 2vw;
+    font-size: 1.5rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 40vw;
+    margin: auto 50%;
+    transform: translate(-50%);
+    gap: 10px;
+}
+
+.block {
+    background-color: beige;
+    height: 23vh;
+    width: 14vw;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+
+
